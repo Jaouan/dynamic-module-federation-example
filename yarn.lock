@@ -39,7 +39,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.23.5":
+"@babel/core@npm:^7.20.12, @babel/core@npm:^7.23.5":
   version: 7.23.6
   resolution: "@babel/core@npm:7.23.6"
   dependencies:
@@ -214,7 +214,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-react-jsx-self@npm:^7.23.3":
+"@babel/plugin-transform-react-jsx-self@npm:^7.18.6, @babel/plugin-transform-react-jsx-self@npm:^7.23.3":
   version: 7.23.3
   resolution: "@babel/plugin-transform-react-jsx-self@npm:7.23.3"
   dependencies:
@@ -225,7 +225,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-react-jsx-source@npm:^7.23.3":
+"@babel/plugin-transform-react-jsx-source@npm:^7.19.6, @babel/plugin-transform-react-jsx-source@npm:^7.23.3":
   version: 7.23.3
   resolution: "@babel/plugin-transform-react-jsx-source@npm:7.23.3"
   dependencies:
@@ -856,7 +856,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^18.2.7":
+"@types/react-dom@npm:^18.0.6, @types/react-dom@npm:^18.2.7":
   version: 18.2.17
   resolution: "@types/react-dom@npm:18.2.17"
   dependencies:
@@ -865,7 +865,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^18.2.15":
+"@types/react@npm:*, @types/react@npm:^18.0.17, @types/react@npm:^18.2.15":
   version: 18.2.45
   resolution: "@types/react@npm:18.2.45"
   dependencies:
@@ -942,6 +942,21 @@ __metadata:
   version: 1.2.0
   resolution: "@ungap/structured-clone@npm:1.2.0"
   checksum: 8209c937cb39119f44eb63cf90c0b73e7c754209a6411c707be08e50e29ee81356dca1a848a405c8bdeebfe2f5e4f831ad310ae1689eeef65e7445c090c6657d
+  languageName: node
+  linkType: hard
+
+"@vitejs/plugin-react@npm:^3.0.0":
+  version: 3.1.0
+  resolution: "@vitejs/plugin-react@npm:3.1.0"
+  dependencies:
+    "@babel/core": "npm:^7.20.12"
+    "@babel/plugin-transform-react-jsx-self": "npm:^7.18.6"
+    "@babel/plugin-transform-react-jsx-source": "npm:^7.19.6"
+    magic-string: "npm:^0.27.0"
+    react-refresh: "npm:^0.14.0"
+  peerDependencies:
+    vite: ^4.1.0-beta.0
+  checksum: 259a92a303cd736240dc0d3282d1261339e7bbcf51c5b326868c910b35d4bd22a360334b2dafa5bfc7f3e935f2cd0fdc7ccb6ec6b519b81017c4c4812cd05290
   languageName: node
   linkType: hard
 
@@ -3238,9 +3253,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"host-shell@workspace:packages/host-shell":
+"host-shell-vite@workspace:packages/host-shell-vite":
   version: 0.0.0-use.local
-  resolution: "host-shell@workspace:packages/host-shell"
+  resolution: "host-shell-vite@workspace:packages/host-shell-vite"
+  dependencies:
+    "@types/react": "npm:^18.0.17"
+    "@types/react-dom": "npm:^18.0.6"
+    "@vitejs/plugin-react": "npm:^3.0.0"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    vite: "npm:^4.0.5"
+  languageName: unknown
+  linkType: soft
+
+"host-shell-webpack@workspace:packages/host-shell-webpack":
+  version: 0.0.0-use.local
+  resolution: "host-shell-webpack@workspace:packages/host-shell-webpack"
   dependencies:
     html-webpack-plugin: "npm:^5.5.0"
     serve: "npm:^14.0.0"
@@ -6228,7 +6256,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^4.4.5":
+"vite@npm:^4.0.5, vite@npm:^4.4.5":
   version: 4.5.1
   resolution: "vite@npm:4.5.1"
   dependencies:

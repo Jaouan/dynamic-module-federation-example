@@ -10,7 +10,12 @@
     },
     "remote-mfe-1#build": {},
     "remote-mfe-1#dev": {},
-    "host-shell#dev": {
+    "host-shell-vite#dev": {
+      "dependsOn": ["remote-mfe-1#build"],
+      "cache": false,
+      "persistent": true
+    },
+    "host-shell-webpack#dev": {
       "dependsOn": ["remote-mfe-1#build"],
       "cache": false,
       "persistent": true

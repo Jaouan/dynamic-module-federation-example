@@ -1,5 +1,5 @@
 {
-  "name": "host-shell",
+  "name": "host-shell-webpack",
   "private": true,
   "version": "0.0.0",
   "scripts": {
