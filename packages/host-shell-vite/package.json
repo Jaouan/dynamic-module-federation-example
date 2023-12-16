@@ -9,10 +9,6 @@
     "preview": "vite preview --port 8080 --strictPort",
     "serve": "vite preview --port 8080 --strictPort"
   },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
   "devDependencies": {
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
